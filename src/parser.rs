@@ -353,8 +353,8 @@ mod tests {
     #[test]
     fn test_parse_all_packets() {
         let packet1 = Packet::new(PacketType::Data, vec![0x01, 0x02]);
-        let packet2 = Packet::new(PacketType::Ack, vec![0x03, 0x04]);
-        
+        let packet2 = Packet::new(PacketType::Acknowledgment, vec![0x03, 0x04]);
+
         let mut buffer = Vec::new();
         buffer.extend_from_slice(&packet1.to_bytes());
         buffer.extend_from_slice(&packet2.to_bytes());
