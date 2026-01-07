@@ -1,0 +1,25 @@
+[package]
+name = "packet-parse-safe"
+version = "0.1.0"
+edition = "2021"
+authors = ["Packet Parser Contributors"]
+description = "A memory-safe binary packet parser written in Rust"
+license = "MIT"
+repository = "https://github.com/example/packet-parse-safe"
+keywords = ["packet", "parser", "binary", "network", "safe"]
+categories = ["network-programming", "parsing"]
+
+[dependencies]
+thiserror = "1.0"
+byteorder = "1.5"
+
+[dev-dependencies]
+tempfile = "3.10"
+
+[[bin]]
+name = "packet-parse-safe"
+path = "src/main.rs"
+
+[lib]
+name = "packet_parse_safe"
+path = "src/lib.rs"
